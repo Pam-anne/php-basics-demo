@@ -11,7 +11,7 @@ $db = new Database($config['database']);
 
 
 
-$users=$db->query('select * from users')->all();
+$users=$db->query('select * from employee')->all();
 
 
 view('employee/index.view.php',[

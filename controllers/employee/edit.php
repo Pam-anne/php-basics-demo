@@ -7,7 +7,7 @@ $config = require base_path("config.php");
 $db = new Database($config['database']);
 
 
-$users = $db->query('select * from users where id= :id', ['id' => $_GET['id']])->findorFail();
+$users = $db->query('select * from employee where id= :id', ['id' => $_GET['id']])->findorFail();
 
 // authorize($note['user_id'] === 1);
 

@@ -9,7 +9,7 @@ $db = new Database($config['database']);
 $currentuser = 2;
 //find the corresponding user
 
-$user = $db->query('SELECT * FROM users WHERE id = :id', [
+$user = $db->query('SELECT * FROM employee WHERE id = :id', [
     'id' => $_POST['id']
 ])->findOrFail();
 
@@ -37,7 +37,7 @@ if(count($errors)){
 }
 
 // if no validation errors, update the record in users database table
-$db->query('update users set name = :name, email = :email where id = :id',[
+$db->query('update employee set name = :name, email = :email where id = :id',[
     'id' => $_POST['id'],
     'name' => $_POST['name'],
     'email' => $_POST['email']

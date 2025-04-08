@@ -1,0 +1,15 @@
+# OS-specific
+Thumbs.db
+.DS_Store
+
+# IDEs
+.vscode/
+
+# PHP vendor (if using Composer)
+vendor/
+
+# Env config
+.env
+
+# Log files
+*.log

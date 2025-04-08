@@ -27,7 +27,7 @@ if (! empty($errors)) {
 
 
 $db->query(
-    "INSERT INTO users(name,email) VALUES(:name,:email)",
+    "INSERT INTO employee(name,email) VALUES(:name,:email)",
     [
         'name' => $_POST['name'],
         'email' => $_POST['email']

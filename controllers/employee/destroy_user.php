@@ -9,9 +9,9 @@ $db = new Database($config['database']);
 
 
 
-$users=$db->query('select * from users')->all();
+$users=$db->query('select * from employee')->all();
 
-$db->query('delete from users where id = :id',[
+$db->query('delete from employee where id = :id',[
     'id'=>$_POST['id']
 ]);
 
