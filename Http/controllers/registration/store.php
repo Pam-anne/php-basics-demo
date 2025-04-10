@@ -57,9 +57,7 @@ if($user){
         'password'=>password_hash($password, PASSWORD_BCRYPT)     //hashing passowrd
     ]);
 
-    //mark the user has logged in
-    login($user);
-
+  
     header('location: /');
     exit();
 
